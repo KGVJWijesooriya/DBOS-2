@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="invoice">
+    <div class="header">
+      <h1>Invoice</h1>
+    </div>
+    <div class="invoice-details">
+      <p><strong>Invoice Number:</strong> INV-001</p>
+      <p><strong>Date:</strong> <span id="currentDate"></span></p>
+      <!-- Add more invoice details here, like customer information, due date, etc. -->
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Serial No</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add invoice items dynamically using JavaScript -->
+      </tbody>
+    </table>
+    <div class="total">
+      <p><strong>Total:</strong> $<span id="totalAmount">0.00</span></p>
+    </div>
+    <div class="buttons">
+      <button onclick="window.print()">Print</button>
+      <button onclick="saveInvoice()">Save</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
